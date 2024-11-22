@@ -25,15 +25,10 @@ def sorted_list(dict):
             clean.append(di)
 
     sorted_list = sorted(clean, key=itemgetter("amount"), reverse=True)
-    print(sorted_list)
 
     for char in sorted_list:
         letter = char.get("letter")
         amount = char.get("amount")
         print(f"The letter {letter} was used {amount} times in this book.")
     
-          
-
-        
-
 main()
